@@ -10,8 +10,8 @@
 class Model
 {
     public:
-        Model();
-        ~Model();
+        Model() { ; }
+        ~Model() { ; }
 
         void addVertex(double x, double y, double z) { m_vertices.push_back(vmath::Vec3<double>(x, y, z)); }
         void addTri   (uint32_t x, uint32_t y, uint32_t z) { m_tris.push_back(vmath::Vec3<uint32_t>(x, y, z)); }

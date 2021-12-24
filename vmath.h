@@ -16,9 +16,9 @@ namespace vmath
             Vec3(const Vec3<T> &v) { this->x = v.x; this->y = v.y; this->z = v.z; }
 
             // getters
-            Vec3 getX() { return this->x; }
-            Vec3 getY() { return this->y; }
-            Vec3 getZ() { return this->z; }
+            T getX() { return this->x; }
+            T getY() { return this->y; }
+            T getZ() { return this->z; }
 
             // vector operations that are func(v1, v2)
             static
