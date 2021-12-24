@@ -1,16 +1,10 @@
-#include "windowing.h"
-#include "vmath.h"
-#include "model.h"
-#include "loader.h"
-
-#include <iostream>
-#include <cstdlib>
-#include <unistd.h>
+#include "app.h"
 
 #define WIDTH 1920
 #define HEIGHT 1080
 
 int main() {
+   App().run();
    //  rtw::RTWindow window = rtw::RTWindow(WIDTH, HEIGHT, NULL, -1);
    //  // for (int j = 0; j < 600; ++j) {
    //  //     for (int i = 0; i < 800; ++i) {
@@ -35,6 +29,6 @@ int main() {
    //    window.pollEvents();
    //    usleep(10000);
    //  }
-   Model *teapot = load::createObj("./assets/utah_teapot.obj");
-   std::cout << (teapot->getVertex(0)).getX() << std::endl;
+   // Model *teapot = load::createObj("./assets/utah_teapot.obj");
+   // std::cout << (teapot->getVertex(0)).getX() << std::endl;
 }
